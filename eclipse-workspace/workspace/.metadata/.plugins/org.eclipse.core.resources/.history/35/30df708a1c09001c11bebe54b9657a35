@@ -1,0 +1,32 @@
+package lab3;
+
+public class tempTest {
+
+	public static void main(String[] args) {
+		String bling = "Pennsylvania";
+		
+		System.out.println(repeat(bling));
+	}
+	
+	public static String repeat(String bling) {
+		bling = bling.toLowerCase();
+		String runBack = "";
+		char[] charArray = bling.toCharArray();
+		for(int i = 0; i < bling.length(); i++ ) {
+			for(int j = 0; j<i; j++) {
+				if (i != j && bling.charAt(i) == charArray[j])
+				{
+					runBack += bling.charAt(j);
+					runBack += bling.charAt(i);
+					charArray[j] = '0';
+					charArray[i] = '0';
+				}
+			}
+		}
+		String results = new String(charArray); 
+		results = results.replace("0", ""); 
+		results += runBack;
+		return results;
+		
+	}
+}

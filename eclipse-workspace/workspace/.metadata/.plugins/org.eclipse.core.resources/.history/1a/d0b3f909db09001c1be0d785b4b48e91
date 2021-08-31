@@ -1,0 +1,23 @@
+package projects;
+import java.util.Scanner;
+public class loopPracticeQuestions {
+
+	public static void doWhile(String[] args) {
+		/*Using the built in “Math.random()” function, create a guessing game 
+		 * that uses a Do/While loop that repeats until the user correctly
+		 *  guesses the answer. If the guess is high, display "Too high, try 
+		 *  again." If the answer is lower then "Too low, try again."
+		 */
+		Scanner in = new Scanner(System.in);
+//		do {
+//			
+//		}
+//		while {
+//			
+//		}
+		int num = in.nextInt();
+		
+		
+	}
+
+}

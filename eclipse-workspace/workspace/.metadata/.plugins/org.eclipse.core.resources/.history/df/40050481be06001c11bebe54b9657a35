@@ -1,0 +1,15 @@
+package projects;
+
+public class removeDupes {
+
+	public static void main(String[] args) {
+		// Write a method to remove duplicate characters from a string.
+
+		String userInput = ("Averange");
+		String userInputNew = userInput.replace("A", "").replace("a", "");
+		System.out.println("You entered "+ userInput + ". Without selcted letters it is "+ userInputNew);
+		
+	}
+
+
+}

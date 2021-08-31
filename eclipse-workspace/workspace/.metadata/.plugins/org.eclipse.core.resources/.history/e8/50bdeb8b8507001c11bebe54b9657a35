@@ -1,0 +1,12 @@
+package projects;
+
+public class repeatLetter {
+
+	public static void main(String[] args) {
+		//Write a program to display first non repeated character of a string 
+		//then the repeating characters. E.g. input morning should display morignn.
+
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package projects;
+//Write a program to count the number of vowels and consonants in a string. E.g. if the 
+//input is Java the result should be 2 vowels and 2 consonants .
+public class countVowelConsonant {
+    public static void main(String[] args) {
+        String userInput = "How many vowels and consenants are in this?";
+        int vCount = 0;
+        int cCount = 0;
+
+        //converting all the chars to lowercase
+        userInput = userInput.toLowerCase();
+        for(int i = 0; i < userInput.length(); i++) { char ch = userInput.charAt(i); if(ch =='a'||ch =='e'||ch =='i'||ch=='o'||ch=='u') 
+        { vCount++; } else if((ch >= 'a'&& ch <= 'z')) {
+        cCount++;
+}}
+        System.out.println("There are "+vCount+ " vowels and " +cCount+ " consonants in the string: "\n +userInput);
+}}
+

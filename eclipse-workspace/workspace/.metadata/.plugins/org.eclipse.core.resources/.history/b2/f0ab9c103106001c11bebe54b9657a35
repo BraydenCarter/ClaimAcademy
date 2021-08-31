@@ -1,0 +1,21 @@
+package projects;
+
+public class removeDupes {
+    public static void main(String[] args) {
+// Write a method to remove duplicate characters from a string.
+        String inString = new String("abbc");
+        String outString = new String();
+
+        for (int i = 0; i < inString.length(); i++) {
+            for (int a = 0; a < outString.length(); a++) {
+                if (inString.charAt(i) != outString.charAt(a)) {
+                    outString = outString + inString.charAt(i);
+                }
+            }
+        }
+
+        System.out.println(outString);
+    }
+
+
+}

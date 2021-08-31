@@ -1,0 +1,26 @@
+package projects;
+
+public class tempTest {
+
+	public static void main(String[] args) {
+		String stringInput = "Pennsylvania";
+		
+//		System.out.println(repeat(stringInput));
+	}
+	public static String repeat(String stringInput) {
+		stringInput = stringInput.toLowerCase();
+		String removedDupes = "";
+		char[] charArray = stringInput.toCharArray();
+		for(int i = 0; i < stringInput.length(); i++ ) {
+			for(int j = 0; j<i; j++) {
+				if (i != j && stringInput.charAt(i) == charArray[j]){
+					removedDupes += stringInput.charAt(j);
+					removedDupes += stringInput.charAt(i);
+					charArray[j] = '0';
+					charArray[i] = '0';
+				}}}
+		String dupesAtEnd = new String(charArray); 
+		dupesAtEnd = dupesAtEnd.replace("0", ""); 
+		dupesAtEnd += removedDupes;
+		return "The input string "+stringInput+" with duplicate charecters sent to the end is "+dupesAtEnd + ".";	
+		}}

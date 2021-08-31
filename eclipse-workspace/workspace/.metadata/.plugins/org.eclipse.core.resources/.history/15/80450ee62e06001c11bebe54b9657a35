@@ -1,0 +1,10 @@
+package projects;
+
+public class removeDupes {
+
+	public static void main(String[] args) {
+		// Write a method to remove duplicate characters from a string.
+
+	}
+
+}

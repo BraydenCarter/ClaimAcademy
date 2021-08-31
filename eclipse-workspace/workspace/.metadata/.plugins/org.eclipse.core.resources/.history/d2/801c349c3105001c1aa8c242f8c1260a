@@ -1,0 +1,15 @@
+package projects;
+public class labTwo2B {
+	int userNumber = 0;
+	public static void oddEven(int[] args) {
+		//Write a method to prompt the user for a number then display check if the number is Even or Odd.
+		int userNumber = 5;
+		
+		if (userNumber % 2 == 0) {
+			System.out.println(userNumber + " is even.");
+		}
+		else {
+			System.out.println(userNumber + " is odd");
+		}
+		
+	}}

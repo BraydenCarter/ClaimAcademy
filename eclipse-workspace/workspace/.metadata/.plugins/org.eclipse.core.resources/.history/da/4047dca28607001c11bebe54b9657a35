@@ -1,0 +1,31 @@
+package projects;
+//Write a program to display first non repeated character of a string 
+//then the repeating characters. E.g. input morning should display morignn.
+public class repeatLetter {
+
+	public static void main(String[] args) {
+		String stringWithDupes = "morning";
+		      char[] characters = stringWithDupes.toCharArray();
+		      int len = characters.length;
+		      System.out.println("Original sentence: " + stringWithDupes);
+		   
+		      for (int i = 0; i < len; i++) {
+		         for (int j = i + 1; j < len; j++) {
+		            if (characters[i] == characters[j]) {
+		               int temp = j;
+   
+		               for (int k = temp; k < len - 1; k++) {
+		                  characters[k] = characters[k + 1];
+
+		               }
+		            j--;
+ 
+		            len--;
+
+		            }}}
+		      String stringWithOutDupes = new String(characters); 
+		      stringWithOutDupes = stringWithOutDupes.substring(0, len);
+  System.out.println(stringWithOutDupes);
+  System.out.println(len); 
+		      System.out.println("Word with duplicate charecters moved to the end: " + stringWithOutDupes);
+	}}

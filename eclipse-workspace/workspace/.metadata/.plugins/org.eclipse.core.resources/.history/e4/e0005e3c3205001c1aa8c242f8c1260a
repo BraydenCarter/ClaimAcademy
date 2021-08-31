@@ -1,0 +1,12 @@
+package projects;
+public class labTwo2B {
+	char userLetter = 0;
+	char ch = 0;
+	public static void main(String[] args) {
+		//Write a method to prompt the user for a letter of the alphabet and display it's numerical value.
+		char userLetter = 'a';
+		char ch = (char) userLetter;
+		int digit = Character.getNumericValue(userLetter);  
+		System.out.println("The character " + ch + "' has a numeric value represented as: " + digit);
+	}}
+	

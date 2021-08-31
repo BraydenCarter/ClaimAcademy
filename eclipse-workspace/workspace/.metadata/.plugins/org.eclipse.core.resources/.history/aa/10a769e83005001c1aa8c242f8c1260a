@@ -1,0 +1,24 @@
+package projects;
+
+public class labTwo2B {
+	
+double circleRadius = 0;
+double circleCircumfrence = 0;
+static double circleArea = 0;
+
+
+	public static void main(double[] args) {
+	//Write a method to prompt the user to enter the radius of the circle 
+	//then calculate the area and circumference of the circle.
+
+		//enter circle radius below
+		double circleRadius = 10;
+		double circleCircumfrence = Math.PI * (2*circleRadius);
+		double circleArea = (circleRadius*circleRadius*Math.PI);
+		
+		System.out.println ("A circle with a radius of " + circleRadius + " has a circumfrence of " + circleCircumfrence+ " and an area of " + circleArea + ".");
+		
+	}
+
+	
+}

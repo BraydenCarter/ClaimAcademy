@@ -1,0 +1,31 @@
+package projects;
+
+import java.util.Scanner;
+
+public class removeChar {
+
+	public static void main(String[] args) {
+		//Write a method to remove a given character from a string. E.g. remove all 'Aa' from Averange should return vernge
+		
+		//word scanner
+		Scanner one = new Scanner(System.in);
+		System.out.println("Please enter the word you would like to alter below.");
+		char word = one.next().charAt(0);
+		
+		//charecter scanner
+		Scanner two = new Scanner(System.in);
+		System.out.println("please enter letters you want removed below");
+		char letter = one.next().charAt(0);
+		
+		
+		
+		
+		
+		
+		//input word below
+		//String userInput = ("Averange");
+		//userInput = userInput.replace("A", "").replace("a", "");
+		//System.out.println("The word "+userInput+ " without desired charecters is "+ userInput);
+	}
+
+}

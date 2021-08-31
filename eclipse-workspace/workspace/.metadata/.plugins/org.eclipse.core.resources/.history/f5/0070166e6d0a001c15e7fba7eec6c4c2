@@ -1,0 +1,43 @@
+package projects;
+import java.util.Scanner;
+public class testCodes {
+
+	public static void main(String[] args) {
+		/*Using the built in “Math.random()” function, create a guessing game 
+		 * that uses a Do/While loop that repeats until the user correctly
+		 *  guesses the answer. If the guess is high, display "Too high, try 
+		 *  again." If the answer is lower then "Too low, try again."
+		 */
+		System.out.println("Please enter a number below.");
+		Scanner in = new Scanner(System.in);
+		int num = in.nextInt();
+		int rightNum = 10;
+		
+		
+		do {
+			String outMess = ("Too high, try again.");
+			//System.out.println("Too high, try again.");
+		}
+		while 
+			(num > rightNum);
+		
+		do {
+			String outMess = ("Too low, try again.");
+			//System.out.println("Too low, try again.");
+		}
+		
+		while 
+			(num < rightNum);
+		
+		
+		do {
+			String outMess = ("Correct! You guessed the right number!");
+			//System.out.println("Correct! You guessed the right number!");
+			
+		}
+		while 
+			(num == rightNum);	
+		in.close();
+	}
+	System.out.println("outMess");
+}
